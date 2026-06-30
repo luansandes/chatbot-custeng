@@ -32,7 +32,9 @@ Open `docs/index.html` in your browser.
 
 ## Deploy the Backend
 
-Deploy `backend/` to a Python hosting service such as Render, Railway, Fly.io, or Google Cloud Run.
+Deploy this repo to Vercel or deploy `backend/` to another Python hosting service such as Render, Railway, Fly.io, or Google Cloud Run.
+
+For Vercel, import the repo and keep the project root as the repository root. The included `vercel.json` routes requests to `backend/main.py`.
 
 Use this start command:
 
