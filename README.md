@@ -35,7 +35,10 @@ Open `docs/index.html` in your browser.
 
 Deploy this repo to Vercel or deploy `backend/` to another Python hosting service such as Render, Railway, Fly.io, or Google Cloud Run.
 
-For Vercel, import the repo and keep the project root as the repository root. The included `vercel.json` routes requests to `api/index.py`.
+For Vercel, either keep the project root as the repository root or set it to `backend`. The repo includes Vercel entrypoints for both layouts:
+
+- Repository root: `api/index.py`
+- `backend` root: `backend/api/index.py`
 
 Use this start command:
 
