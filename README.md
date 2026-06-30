@@ -3,7 +3,8 @@
 This is a bare-minimum chatbot setup:
 
 - `docs/index.html` is the static frontend for GitHub Pages.
-- `backend/main.py` is a small FastAPI backend using `google-genai`.
+- `backend/main.py` is a small FastAPI backend using `google-genai` for local/non-Vercel hosting.
+- `api/index.py` is the Vercel Python entrypoint.
 - The Gemini API key stays on the backend.
 - Requests are rate-limited to 15 per minute per client IP.
 
@@ -34,7 +35,7 @@ Open `docs/index.html` in your browser.
 
 Deploy this repo to Vercel or deploy `backend/` to another Python hosting service such as Render, Railway, Fly.io, or Google Cloud Run.
 
-For Vercel, import the repo and keep the project root as the repository root. The included `vercel.json` routes requests to `backend/main.py`.
+For Vercel, import the repo and keep the project root as the repository root. The included `vercel.json` routes requests to `api/index.py`.
 
 Use this start command:
 
